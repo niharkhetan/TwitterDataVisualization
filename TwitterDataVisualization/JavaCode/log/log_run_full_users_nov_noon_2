@@ -1,0 +1,11 @@
+{
+"geocode": {"$exists": false}
+}
+
+Queried Document: { "_id" : { "$oid" : "545783223863da298d77203e"} , "user_id" : 108808405 , "user_name" : "ItsTheBro" , "friend_count" : 552 , "follower_count" : 304 , "status_count" : 10857 , "favorite_count" : 0 , "account_age" : "27 Jan 2010 02:50:45 GMT" , "user_location" : "Papakura, Auckland. NZ"}
+reformated_location: Papakura,+Auckland+NZ
+Geocoding URL: https://maps.googleapis.com/maps/api/geocode/json?address=Papakura,+Auckland+NZ&key=AIzaSyD3KHRITU_JfeYW9yKe15xyd45JWhKgsLo
+In this run:
+Total:7085 record(s) found.
+Total:0 record(s) processed.
+Total:0 record(s) updated.

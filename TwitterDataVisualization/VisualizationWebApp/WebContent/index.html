@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+<style>
+#statesBar2-content{
+text-align: center;
+}
+</style>
+<script src="resources/sap-ui-core.js" id="sap-ui-bootstrap"
+	data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_bluecrystal">
+	
+</script>
+<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+<!-- Begin GMaps -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="./utils/geocoding.js">
+	
+	
+
+</script>
+<!-- End GMaps -->
+
+<script>
+	sap.ui.localResources("twitter_visual");
+	var app = new sap.m.App({
+		initialPage : "tileContainerView"
+	});
+	var tileContainer = sap.ui.view({
+		id : "tileContainerView",
+		viewName : "twitter_visual.tile",
+		type : sap.ui.core.mvc.ViewType.JS
+	});
+	
+	var page1 = sap.ui.view({
+		id : "idpage1",
+		viewName : "twitter_visual.main",
+		type : sap.ui.core.mvc.ViewType.JS
+	});
+	var page2 = sap.ui.view({
+		id : "idpage2",
+		viewName : "twitter_visual.child",
+		type : sap.ui.core.mvc.ViewType.JS
+	})
+	var page3 = sap.ui.view({
+		id : "idpage3",
+		viewName : "twitter_visual.stats",
+		type : sap.ui.core.mvc.ViewType.JS
+	})
+	app.addPage(tileContainer);
+	app.addPage(page1);
+	app.addPage(page2);
+	app.addPage(page3);
+	app.placeAt("content");
+</script>
+
+</head>
+<body class="sapUiBody" role="application">
+	<div id="content"></div>
+</body>
+</html>
